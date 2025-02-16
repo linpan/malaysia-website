@@ -2,7 +2,6 @@
 
 'use client';
 
-import { FAQSection } from '@/components/layout/sections/faq';
 import Grid from '@/components/svg/grid';
 import {
   Accordion,
@@ -57,35 +56,35 @@ const AboutPage: React.FC = () => {
     },
   ];
   return (
-    <div className='relative flex items-center justify-center'>
-      <div className='absolute inset-0 mt-24'>
+    <div className="relative flex items-center justify-center">
+      <div className="absolute inset-0 mt-24">
         <Grid className={'opacity-30'} />
       </div>
-      <div className='faq relative z-10 mx-auto mt-24 max-w-5xl gap-6 px-4 text-black sm:px-6 lg:mt-20 lg:px-8'>
-        <div className='lg:text-center'>
-          <h2 className='text-base font-semibold uppercase tracking-wide text-indigo-600'>
+      <div className="faq relative z-10 mx-auto mt-24 max-w-5xl gap-6 px-4 text-black sm:px-6 lg:mt-20 lg:px-8">
+        <div className="lg:text-center">
+          <h2 className="text-base font-semibold uppercase tracking-wide text-indigo-600">
             FAQ
           </h2>
-          <p className='mt-2 text-3xl font-extrabold leading-8 tracking-tight text-gray-900 sm:text-4xl'>
+          <p className="mt-2 text-3xl font-extrabold leading-8 tracking-tight text-gray-900 sm:text-4xl">
             Frequently Asked Questions
           </p>
-          <p className='mx-auto mt-6 max-w-3xl text-base/7 text-gray-600'>
+          <p className="mx-auto mt-6 max-w-3xl text-base/7 text-gray-600">
             Have a different question and can’t find the answer you’re looking
             for? Reach out to our support team by{' '}
             <a
-              href='#'
-              className='font-semibold text-indigo-600 hover:text-indigo-500'
+              href="#"
+              className="font-semibold text-indigo-600 hover:text-indigo-500"
             >
               sending us an email
             </a>{' '}
             and we’ll get back to you as soon as we can.
           </p>
         </div>
-        <div className='faq-section mx-auto mb-12 mt-6 max-w-3xl flex-col gap-6'>
-          <Accordion type='single' collapsible>
+        <div className="faq-section mx-auto mb-12 mt-6 max-w-3xl flex-col gap-6">
+          <Accordion type="single" collapsible>
             {leftAccordionData.map(({ question, answer, value }) => (
               <AccordionItem key={value} value={value}>
-                <AccordionTrigger className='text-left text-base font-bold'>
+                <AccordionTrigger className="text-left text-base font-bold">
                   {question}
                 </AccordionTrigger>
                 <AccordionContent>{answer}</AccordionContent>

@@ -2,13 +2,13 @@ import { Header } from '@/components/layout/navbar';
 
 import { FooterSection } from '@/components/layout/sections/footer';
 import HeroSection from '@/components/layout/sections/hero';
-import { SponsorsSection } from '@/components/layout/sections/sponsors';
-import { TeamSection } from '@/components/layout/sections/team';
+
 import { FAQSection } from '@/components/layout/sections/faq';
 import { ContactSection } from '@/components/layout/sections/contact';
 import About from '@/components/layout/sections/about';
-import { FeaturesSection } from '@/components/layout/sections/Features';
+
 import Services from '@/components/layout/sections/services';
+import ServicesSection from '@/components/layout/sections/Features';
 
 export const metadata = {
   title: 'TalentPioneer - Your Strategic Partner in Southeast Asia',
@@ -39,11 +39,11 @@ export default function Home() {
     <div>
       <Header />
       <HeroSection />
-      <SponsorsSection />
+      {/*<SponsorsSection />*/}
       <About />
-      <FeaturesSection />
+      <ServicesSection />
       <Services />
-      <TeamSection />
+      {/*<TeamSection />*/}
       <ContactSection />
       <FAQSection />
       <FooterSection />

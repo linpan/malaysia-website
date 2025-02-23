@@ -1,5 +1,6 @@
 'use client';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function HeroSection() {
   return (
@@ -7,7 +8,7 @@ export default function HeroSection() {
       <div className="relative isolate overflow-hidden">
         <Image
           alt=""
-          src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2830&q=80&blend=111827&sat=-50&exp=20&blend-mode=multiply"
+          src="/hero1.jpg"
           fill
           style={{
             objectFit: 'cover',
@@ -27,34 +28,41 @@ export default function HeroSection() {
           />
         </div>
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-2xl py-8 sm:py-20 lg:py-24">
+          <div className="mx-auto max-w-4xl py-8 sm:py-20 lg:py-24">
             <div className="hidden sm:mb-8 sm:flex sm:justify-center">
               <div className="relative rounded-full px-3 py-1 text-sm/6 text-gray-400 ring-1 ring-white/10 hover:ring-white/20">
-                Announcing our next round of funding.{' '}
-                <a href="#" className="font-semibold text-white">
+                Explore Jobs .{' '}
+                <Link
+                  href="/career-opportunities"
+                  className="font-semibold text-white"
+                >
                   <span aria-hidden="true" className="absolute inset-0" />
                   Read more <span aria-hidden="true">&rarr;</span>
-                </a>
+                </Link>
               </div>
             </div>
             <div className="text-center">
-              <h1 className="text-balance text-5xl font-semibold tracking-tight text-white sm:text-7xl">
-                Data to enrich your online business
+              <h1 className="w-full text-balance text-5xl font-semibold tracking-tight text-white sm:text-5xl">
+                <div>Your Talent, Our Mission.</div>
+                <div>Building Futures, Together.</div>
               </h1>
-              <p className="mt-8 text-pretty text-lg font-medium text-gray-400 sm:text-xl/8">
-                Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
-                lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat.
+              <p className="mt-5 text-pretty text-lg font-medium text-gray-300 sm:text-xl/8">
+                We empower both individuals and organizations to achieve their
+                highest potential and drive mutual growth.
               </p>
               <div className="mt-10 flex items-center justify-center gap-x-6">
                 <a
                   href="#"
                   className="shadow-xs rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white hover:bg-indigo-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
                 >
-                  Get started
+                  Deposit Resume
                 </a>
-                <a href="#" className="text-sm/6 font-semibold text-white">
+                <Link
+                  href="/about-us"
+                  className="text-sm/6 font-semibold text-white"
+                >
                   Learn more <span aria-hidden="true">→</span>
-                </a>
+                </Link>
               </div>
             </div>
           </div>

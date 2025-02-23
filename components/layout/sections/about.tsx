@@ -9,22 +9,23 @@ export default function About() {
         <div className="md:w-1/2">
           <span className="text-xs text-gray-500 md:text-sm">ABOUT</span>
           <h2 className="text-2xl font-semibold leading-tight text-black md:text-5xl md:leading-relaxed">
-            About <span className="text-[#3C50C2]">Us</span>
+            About <span className="uppercase text-[#3C50C2]">Us</span>
           </h2>
           <p className="mb-8 mt-4 text-base text-black">
-            Great Pyramid is a leading one-stop HR service provider in Malaysia,
-            focused on providing individuals and organisations with innovative
-            solutions to manage complex end-to-end HR processes. With more than
-            15 years of experience, Great Pyramid provides high value added
-            services to assist our clients in expanding their business
-            operations on a local and global basis. Our solutions assist to
-            reduce cost, focus on your core business and gain valuable market
-            knowledge.
+            Welcome to TalentPioneer, where innovation meets opportunity in the
+            heart of Southeast Asia. At TalentPioneer we’re not just a
+            recruiting agency; we’re your strategic partner in navigating the
+            dynamic Malaysian job market.Our mission is to connect exceptional
+            talent with leading companies through expert recruitment, career
+            coaching, and targeted training. With our deep understanding of
+            local industry trends and a commitment to personalized service,
+            we’re here to help you find the right fit and unlock new career and
+            business growth opportunities.
           </p>
           <p className="text-base font-bold text-[#3C50C2]">
-            We specialise in all HR and immigration matters; from executive
-            search recruitment to work pass solutions that are imperative to
-            every successful company’s growth.
+            Discover how TalentPioneer can transform your hiring process and
+            propel your career to new heights. Let’s shape the future of work
+            together.
           </p>
         </div>
         <div className="relative mt-auto flex flex-col items-center justify-center md:flex md:w-1/2">

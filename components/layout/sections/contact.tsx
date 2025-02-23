@@ -5,7 +5,7 @@ import {
   CardFooter,
   CardHeader,
 } from '@/components/ui/card';
-import { Building2, Clock, Mail, Phone } from 'lucide-react';
+import { Building2, Clock, Mail } from 'lucide-react';
 import { useForm } from 'react-hook-form';
 import { z } from 'zod';
 import { zodResolver } from '@hookform/resolvers/zod';
@@ -78,8 +78,7 @@ export const ContactSection = () => {
             <h2 className="text-3xl font-bold md:text-4xl">Connect With Us</h2>
           </div>
           <p className="mb-8 text-muted-foreground lg:w-5/6">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
-            ipsam sint enim exercitationem ex autem corrupti quas tenetur
+            Contact us today and experience our exceptional services firsthand.
           </p>
 
           <div className="flex flex-col gap-4">
@@ -91,17 +90,21 @@ export const ContactSection = () => {
                 <div className="font-bold">Find us</div>
               </div>
 
-              <div>742 Evergreen Terrace, Springfield, IL 62704</div>
-            </div>
-
-            <div>
-              <div className="mb-1 flex gap-2">
-                <Phone color={'#60a5fa'} className="size-6" />
-                <div className="font-bold">Call us</div>
+              <div>
+                {' '}
+                Suite 1122, Level 11, Menara Dungun, No. 46,
+                <br /> Jalan Dungun Bukit, Damansara, 50490, Kuala Lumpur
               </div>
-
-              <div>+1 (619) 123-4567</div>
             </div>
+
+            {/*<div>*/}
+            {/*  <div className="mb-1 flex gap-2">*/}
+            {/*    <Phone color={'#60a5fa'} className="size-6" />*/}
+            {/*    <div className="font-bold">Call us</div>*/}
+            {/*  </div>*/}
+
+            {/*  <div>+1 (619) 123-4567</div>*/}
+            {/*</div>*/}
 
             <div>
               <div className="mb-1 flex gap-2">
@@ -109,7 +112,7 @@ export const ContactSection = () => {
                 <div className="font-bold">Mail US</div>
               </div>
 
-              <div>leomirandadev@gmail.com</div>
+              <div> katie.wang@talent-pioneer.com</div>
             </div>
 
             <div>
@@ -120,7 +123,7 @@ export const ContactSection = () => {
 
               <div>
                 <div>Monday - Friday</div>
-                <div>8AM - 4PM</div>
+                <div>10AM - 4PM</div>
               </div>
             </div>
           </div>

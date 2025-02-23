@@ -1,6 +1,6 @@
 'use client';
 import * as React from 'react';
-import { MapPin, Phone, Mail } from 'lucide-react';
+import { MapPin, Mail } from 'lucide-react';
 
 import { Separator } from '@/components/ui/separator';
 import { Social } from '@/components/layout/sections/social';
@@ -75,13 +75,15 @@ export function FooterSection() {
                   </span>
                 </div>
                 <div className="flex items-center space-x-3">
-                  <Phone className="text-slate-300" size={20} />
-                  <span className="text-slate-300">+60 12-345-6789</span>
+                  <Mail className="text-slate-300" size={20} />
+                  <span className="text-slate-300">
+                    katie.wang@talent-pioneer.com
+                  </span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Mail className="text-slate-300" size={20} />
                   <span className="text-slate-300">
-                    info@greatpyramid.com.my
+                    katie.wang@talent-pioneer.com
                   </span>
                 </div>
               </div>
@@ -113,16 +115,10 @@ export function FooterSection() {
               </a>
             </p>
             <div className="mt-4 flex space-x-6 md:mt-0">
-              <a
-                href="/privacy-policy"
-                className="transition-colors hover:text-white"
-              >
+              <a href="#" className="transition-colors hover:text-white">
                 Privacy Policy
               </a>
-              <a
-                href="/terms-of-service"
-                className="transition-colors hover:text-white"
-              >
+              <a href="#" className="transition-colors hover:text-white">
                 Terms of Service
               </a>
             </div>

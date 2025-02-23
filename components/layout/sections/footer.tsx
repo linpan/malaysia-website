@@ -1,6 +1,6 @@
 'use client';
 import * as React from 'react';
-import { MapPin, Phone, Mail } from 'lucide-react';
+import { MapPin, Mail } from 'lucide-react';
 
 import { Separator } from '@/components/ui/separator';
 
@@ -32,7 +32,7 @@ export function FooterSection() {
                     href="/services/construction"
                     className="text-slate-300 transition-colors hover:text-white"
                   >
-                    Construction Services
+                    Executive Search
                   </a>
                 </li>
                 <li>
@@ -40,7 +40,7 @@ export function FooterSection() {
                     href="/services/renovation"
                     className="text-slate-300 transition-colors hover:text-white"
                   >
-                    Renovation Works
+                    Entry & Mid Level Mass Recruitment
                   </a>
                 </li>
                 <li>
@@ -48,7 +48,7 @@ export function FooterSection() {
                     href="/services/maintenance"
                     className="text-slate-300 transition-colors hover:text-white"
                   >
-                    Building Maintenance
+                    Diversity and Inclusion Initiatives
                   </a>
                 </li>
                 <li>
@@ -72,17 +72,18 @@ export function FooterSection() {
                     size={20}
                   />
                   <span className="text-slate-300">
-                    Construction Street, Kuala Lumpur, Malaysia
+                    Suite 1122, Level 11, Menara Dungun, No. 46,
+                    <br /> Jalan Dungun Bukit, Damansara, 50490, Kuala Lumpur
                   </span>
                 </div>
                 <div className="flex items-center space-x-3">
-                  <Phone className="text-slate-300" size={20} />
-                  <span className="text-slate-300">+60 12-345-6789</span>
+                  <Mail className="text-slate-300" size={20} />
+                  <span className="text-slate-300">hr@talent-pioneer.com</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Mail className="text-slate-300" size={20} />
                   <span className="text-slate-300">
-                    info@greatpyramid.com.my
+                    katie.wang@talent-pioneer.com
                   </span>
                 </div>
               </div>

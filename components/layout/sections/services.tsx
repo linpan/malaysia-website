@@ -11,39 +11,37 @@ type ServiceCard = {
 // LawyerServices.tsx
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
-import { UserCircle, Users, Building2 } from 'lucide-react';
-
 const services: ServiceCard[] = [
   {
-    title: 'Avocat indépendant',
+    title: 'Malaysian job market insights',
     description:
-      "Une présentation claire de vous-même ainsi que votre ou vos domaines d'expertises.",
-    icon: <UserCircle className="h-12 w-12" />,
+      'Extensive expertise across various sectors with industry-specific knowledge including tech recruitment and data-driven agile hiring.',
+    icon: 'five.svg',
     link: '/en-savoir-plus',
   },
   {
-    title: 'Avocats associés',
+    title: 'Proven track record of success',
     description:
-      "Vos domaines d'expertises et la présentation de votre cabinet ainsi que les différents membres.",
-    icon: <Users className="h-12 w-12" />,
+      'Expertise in sourcing strategies, talent assessment, interviewing and selection, onboarding and integration, as well as talent management.',
+    icon: 'five.svg',
     link: '/en-savoir-plus',
   },
   {
-    title: "Cabinet d'avocats international",
+    title: 'Diversity and Inclusion',
     description:
-      'Tous vos cabinets et vos équipes, votre actualité, vos parutions, en français ou en plusieurs langues.',
-    icon: <Building2 className="h-12 w-12" />,
+      'Strong focus on promoting diverse and inclusive hiring practices tailored to modern organizational needs.',
+    icon: 'five.svg',
     link: '/en-savoir-plus',
   },
 ];
 
 export default function Services() {
   return (
-    <section className="mx-auto px-4 md:max-w-7xl">
+    <section className="mx-auto px-4 md:max-w-7xl md:py-24 lg:py-32">
       <div className="space-y-8">
         <div className="space-y-4 text-center">
           <h2 className="text-3xl font-bold tracking-tight text-blue-900">
-            为何选择TalentPioneer
+            Why Choose TalentPioneer?
           </h2>
         </div>
 
@@ -56,7 +54,7 @@ export default function Services() {
               <CardHeader>
                 <div className="mx-auto mb-4 text-blue-900">
                   <Image
-                    src={'/five.svg'}
+                    src={`/${service.icon}`}
                     width={200}
                     height={200}
                     alt="five"

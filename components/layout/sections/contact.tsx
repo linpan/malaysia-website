@@ -9,6 +9,7 @@ import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 
 import { Textarea } from '@/components/ui/textarea';
+import { uploadToGoogleDrive } from '@/lib/goolge_api';
 
 const MAX_FILE_SIZE = 55 * 1024 * 1024; // 5MB
 
@@ -51,8 +52,8 @@ export const ContactSection = () => {
     },
   });
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values);
+  async function onSubmit(values: z.infer<typeof formSchema>) {
+    console.log(values)
   }
 
   return (

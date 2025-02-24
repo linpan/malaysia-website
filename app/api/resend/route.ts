@@ -21,7 +21,7 @@ const send = async (req: NextApiRequest, res: NextApiResponse) => {
         ],
       });
 
-      // @ts-ignore
+      // @ts-expect-error make build pass
       return res.status(200).send({ data: data.id });
     }
     default:

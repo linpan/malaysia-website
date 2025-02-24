@@ -3,60 +3,38 @@
 'use client';
 
 import Grid from '@/components/svg/grid';
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from '@/components/ui/accordion';
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import type React from 'react';
 
 const AboutPage: React.FC = () => {
   const leftAccordionData = [
     {
-      value: 'item-93',
-      question:
-        'How does JetBrains Al Assistant compare to other Al assistants？',
-      answer:
-        'JetBrains AI Assistant is a collection of specific features in different JetBrains products, such as our IDEs, that become available to users through access to the JetBrains AI service.\n' +
-        '\n' +
-        'These features are product-specific and extend JetBrains products in various ways.\n' +
-        '\n' +
-        'Our approach to building AI Assistant’s features focuses on two main aspects:',
-    },
-    {
-      value: 'item-13',
-      question:
-        'How does JetBrains Al Assistant compare to other Al assistants？',
-      answer:
-        'JetBrains AI Assistant is a collection of specific features in different JetBrains products, such as our IDEs, that become available to users through access to the JetBrains AI service.\n' +
-        '\n' +
-        'These features are product-specific and extend JetBrains products in various ways.\n' +
-        '\n' +
-        'Our approach to building AI Assistant’s features focuses on two main aspects:',
-    },
-
-    {
       value: 'item-1',
-      question: 'What is the JetBrains AI Assistant?',
+      question: '1. How does TalentPioneer help me find a job?',
       answer:
-        'JetBrains AI Assistant is a feature set integrated into JetBrains IDEs that provides AI-driven solutions to developers, improving productivity and code quality.',
+        'TalentPioneer assists you in finding a job by connecting you with top employers actively looking for candidates with your skills. As a headhunter, we provide personalized support throughout your job search, including resume optimization, interview coaching, and access to exclusive job openings. Our goal is to match you with opportunities that align with your career aspirations and help you stand out in the hiring process.',
     },
     {
       value: 'item-2',
-      question: 'Is JetBrains AI Assistant free?',
+      question: '2. How can I receive job notifications from TalentPioneer?',
       answer:
-        'JetBrains AI Assistant is free for evaluation during its early access program, but it may become a paid feature as it matures.',
+        'You can receive job notifications from TalentPioneer by signing up on our website and creating a profile. Once your profile is set up, you can customize your job preferences, and we’ll send you email alerts for job openings that match your criteria.',
     },
     {
       value: 'item-3',
-      question: 'Which JetBrains IDEs support AI Assistant?',
+      question: '3. Do I need to pay for TalentPioneer\'s job-seeking services?',
       answer:
-        'AI Assistant is currently available in IntelliJ IDEA, WebStorm, PyCharm, and other flagship JetBrains IDEs.',
+        'No, you do not need to pay for TalentPioneer\'s job-seeking services. Our services are completely free for candidates, as our goal is to help you find the right job without any cost to you.',
+    },
+    {
+      value: 'item-4',
+      question: '4. How does TalentPioneer protect my personal data?',
+      answer:
+        'TalentPioneer takes your privacy seriously and implements strict measures to protect your personal data. We use secure systems to store your information and ensure that it is only accessible to authorized personnel. Additionally, we comply with data protection regulations and do not share your information with third parties without your consent. Your trust is important to us, and we are committed to keeping your data safe.',
     },
   ];
   return (
-    <div className="relative flex items-center justify-center">
+    <div className="relative flex items-center justify-center md:py-16 lg:py-24">
       <div className="absolute inset-0 mt-24">
         <Grid className={'opacity-30'} />
       </div>

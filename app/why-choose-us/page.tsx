@@ -2,6 +2,7 @@ import DotCorner from '@/components/svg/dot';
 import React from 'react';
 
 import Image from 'next/image';
+import Link from 'next/link';
 
 const Choose = () => {
   return (
@@ -14,7 +15,7 @@ const Choose = () => {
                 <div className="w-full px-3 sm:px-4 xl:w-1/2">
                   <div className="py-3 sm:py-4">
                     <Image
-                      src="https://i.ibb.co/gFb3ns6/image-1.jpg"
+                      src="/image-1.webp"
                       alt="Descriptive alt text"
                       className="w-full rounded-2xl"
                       loading="lazy"
@@ -24,7 +25,7 @@ const Choose = () => {
                   </div>
                   <div className="py-3 sm:py-4">
                     <Image
-                      src="https://i.ibb.co/rfHFq15/image-2.jpg"
+                      src="/image-2.webp"
                       alt="Descriptive alt text"
                       className="w-full rounded-2xl"
                       loading="lazy"
@@ -36,12 +37,14 @@ const Choose = () => {
                 <div className="w-full px-3 sm:px-4 xl:w-1/2">
                   <div className="relative z-10 my-4">
                     <Image
-                      src="https://i.ibb.co/9y7nYCD/image-3.jpg"
+                      src="/image-3.webp"
                       alt="image"
                       className="w-full rounded-2xl bg-gray-200"
                       width={500}
                       height={500}
                       loading="lazy"
+                      placeholder="blur"
+                      blurDataURL="https://i.ibb.co/9y7nYCD/image-3.jpg"
                     />
                     <span className="absolute -bottom-7 -right-7 z-[-1]">
                       <DotCorner />
@@ -52,29 +55,28 @@ const Choose = () => {
             </div>
 
             <div className="w-full px-4 lg:w-1/2 xl:w-5/12">
-              <div className="mt-10 lg:mt-0">
+              <div className="mt-10 lg:mt-0 gap-0.5">
                 <span className="mb-4 block text-lg font-semibold text-primary">
                   Why Choose Us
                 </span>
                 <h2 className="text-dark mb-5 text-3xl font-bold sm:text-[40px]/[48px]">
-                  Make your customers happy by giving services.
+                  Expert Talent Solutions That Drive Results
                 </h2>
                 <p className="text-body-color mb-5 text-base">
-                  It is a long established fact that a reader will be distracted
-                  by the readable content of a page when looking at its layout.
-                  The point of using Lorem Ipsum is that it has a more-or-less.
+                  • We transform your workforce through targeted talent assessment and development.<br />
+                  • Our data-driven approach delivers measurable improvements in team performance
+                  and organizational growth.
                 </p>
                 <p className="text-body-color mb-8 text-base">
-                  A domain name is one of the first steps to establishing your
-                  brand. Secure a consistent brand image with a domain name that
-                  matches your business.
+                  Join leading companies who trust us to build their next generation of leaders.
+                  Start your talent transformation journey today.
                 </p>
-                <a
-                  href="javascript:void(0)"
+                <Link
+                  href="#"
                   className="inline-flex items-center justify-center rounded-md border border-transparent bg-primary px-7 py-3 text-center text-base font-medium text-white hover:bg-opacity-90"
                 >
                   Get Started
-                </a>
+                </Link>
               </div>
             </div>
           </div>

@@ -14,12 +14,10 @@ export default function AboutPage() {
         <div className="mx-auto max-w-7xl px-6 py-32 sm:py-40 lg:px-8">
           <div className="mx-auto max-w-2xl lg:mx-0 lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-x-16 lg:gap-y-8">
             <h1 className="text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl">
-              Crafting the future of ecommerce
+              Connect Excellence <br/> Shape the Future
             </h1>
             <p className="mt-6 text-lg text-gray-500">
-              We are a passionate team empowering growth through innovation.
-              Building tools to shape the future of ecommerce for businesses
-              worldwide.
+              Our mission is to connect exceptional talent with leading companies through expert recruitment, career coaching, and targeted training.
             </p>
             <Image
               alt="Ecommerce Team"
@@ -38,10 +36,7 @@ export default function AboutPage() {
           <div>
             <h2 className="text-4xl font-semibold text-gray-900">Our Story</h2>
             <p className="mt-6 text-gray-600">
-              Founded with the mission to innovate and empower, we have
-              consistently pushed boundaries to deliver cutting-edge solutions.
-              Our journey has been fueled by passion, dedication, and a
-              commitment to excellence.
+              Innovation   Collaboration   Integrity   Professionalism   Growth
             </p>
           </div>
           <Image
@@ -61,9 +56,7 @@ export default function AboutPage() {
             <div>
               <h2 className="text-4xl font-semibold text-gray-900">Our Team</h2>
               <p className="mt-6 text-gray-600">
-                Our diverse team of experts brings passion, innovation, and
-                expertise to every challenge. Together, we are redefining
-                possibilities and helping businesses thrive.
+                At TalentPioneer we’re not just a recruiting agency, we’re your strategic partner in navigating the dynamic Malaysian job market.
               </p>
             </div>
             <div className="grid grid-cols-2 gap-4">

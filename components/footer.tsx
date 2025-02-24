@@ -4,6 +4,7 @@ import { MapPin, Mail } from 'lucide-react';
 
 import { Separator } from '@/components/ui/separator';
 import { Social } from '@/components/layout/sections/social';
+import Link from 'next/link';
 
 export function FooterSection() {
   const currentYear = new Date().getFullYear();
@@ -31,7 +32,7 @@ export function FooterSection() {
                     href="/services/construction"
                     className="text-slate-300 transition-colors hover:text-white"
                   >
-                    Construction Services
+                    Executive Search
                   </a>
                 </li>
                 <li>
@@ -39,7 +40,7 @@ export function FooterSection() {
                     href="/services/renovation"
                     className="text-slate-300 transition-colors hover:text-white"
                   >
-                    Renovation Works
+                    Entry & Mid Level Mass Recruitment
                   </a>
                 </li>
                 <li>
@@ -47,7 +48,7 @@ export function FooterSection() {
                     href="/services/maintenance"
                     className="text-slate-300 transition-colors hover:text-white"
                   >
-                    Building Maintenance
+                    Diversity and Inclusion Initiatives
                   </a>
                 </li>
                 <li>
@@ -55,7 +56,7 @@ export function FooterSection() {
                     href="/services/design"
                     className="text-slate-300 transition-colors hover:text-white"
                   >
-                    Design & Build
+                    Industry-Specific Solutions
                   </a>
                 </li>
               </ul>
@@ -71,14 +72,13 @@ export function FooterSection() {
                     size={20}
                   />
                   <span className="text-slate-300">
-                    Construction Street, Kuala Lumpur, Malaysia
+                    Suite 1122, Level 11, Menara Dungun, No. 46,
+                    <br /> Jalan Dungun Bukit, Damansara, 50490, Kuala Lumpur
                   </span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Mail className="text-slate-300" size={20} />
-                  <span className="text-slate-300">
-                    katie.wang@talent-pioneer.com
-                  </span>
+                  <span className="text-slate-300">HR@talent-pioneer.com</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Mail className="text-slate-300" size={20} />
@@ -95,8 +95,6 @@ export function FooterSection() {
               <div className="space-y-2 text-slate-300">
                 <p>Monday - Friday</p>
                 <p>9:00 AM - 6:00 PM</p>
-                <p>Saturday</p>
-                <p>9:00 AM - 1:00 PM</p>
                 <p>Sunday & Public Holidays</p>
                 <p>Closed</p>
               </div>
@@ -115,12 +113,18 @@ export function FooterSection() {
               </a>
             </p>
             <div className="mt-4 flex space-x-6 md:mt-0">
-              <a href="#" className="transition-colors hover:text-white">
+              <Link
+                href="/privacy-policy"
+                className="transition-colors hover:text-white"
+              >
                 Privacy Policy
-              </a>
-              <a href="#" className="transition-colors hover:text-white">
+              </Link>
+              <Link
+                href="/terms-of-service"
+                className="transition-colors hover:text-white"
+              >
                 Terms of Service
-              </a>
+              </Link>
             </div>
           </div>
         </div>

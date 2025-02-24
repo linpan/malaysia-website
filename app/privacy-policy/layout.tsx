@@ -3,15 +3,15 @@
 import { FooterSection } from '@/components/footer';
 import { Header } from '@/components/layout/navbar';
 
-interface AboutLayoutProps {
+interface LayoutProps {
   children: React.ReactNode;
 }
 
-const Layout: React.FC<AboutLayoutProps> = ({ children }) => {
+const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <div className="flex min-h-screen w-full flex-col">
       <Header />
-      <main className="mx-auto w-full flex-grow">{children}</main>
+      <main className="container mx-auto w-full flex-grow">{children}</main>
       <FooterSection />
     </div>
   );

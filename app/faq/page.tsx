@@ -1,9 +1,12 @@
-// app/about-us/page.tsx
-
 'use client';
 
 import Grid from '@/components/svg/grid';
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from '@/components/ui/accordion';
 import type React from 'react';
 
 const AboutPage: React.FC = () => {
@@ -22,9 +25,9 @@ const AboutPage: React.FC = () => {
     },
     {
       value: 'item-3',
-      question: '3. Do I need to pay for TalentPioneer\'s job-seeking services?',
+      question: "3. Do I need to pay for TalentPioneer's job-seeking services?",
       answer:
-        'No, you do not need to pay for TalentPioneer\'s job-seeking services. Our services are completely free for candidates, as our goal is to help you find the right job without any cost to you.',
+        "No, you do not need to pay for TalentPioneer's job-seeking services. Our services are completely free for candidates, as our goal is to help you find the right job without any cost to you.",
     },
     {
       value: 'item-4',
@@ -34,15 +37,12 @@ const AboutPage: React.FC = () => {
     },
   ];
   return (
-    <div className="relative flex items-center justify-center md:py-16 lg:py-24">
+    <div className="relative flex items-center justify-center bg-gradient-to-b from-indigo-100 via-white to-indigo-50 md:py-16 lg:py-24">
       <div className="absolute inset-0 mt-24">
         <Grid className={'opacity-30'} />
       </div>
       <div className="faq relative z-10 mx-auto mt-24 max-w-5xl gap-6 px-4 text-black sm:px-6 lg:mt-20 lg:px-8">
         <div className="lg:text-center">
-          <h2 className="text-base font-semibold uppercase tracking-wide text-indigo-600">
-            FAQ
-          </h2>
           <p className="mt-2 text-3xl font-extrabold leading-8 tracking-tight text-gray-900 sm:text-4xl">
             Frequently Asked Questions
           </p>

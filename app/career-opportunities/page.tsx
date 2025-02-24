@@ -52,28 +52,28 @@ const positions: JobPosition[] = [
 
 const JobCard: React.FC<JobPosition> = ({ title, location, type, url }) => {
   return (
-    <Card className="mb-4 transition-shadow hover:shadow-md">
-      <CardContent className="p-6">
-        <div className="flex items-center justify-between">
-          <div className="space-y-4">
-            <h3 className="text-xl font-semibold text-gray-900">{title}</h3>
-            <div className="flex items-center space-x-6">
-              <div className="flex items-center text-gray-500">
-                <MapPin className="mr-2 h-4 w-4" />
-                <span className="text-sm">{location}</span>
+    <Card className='mb-4 transition-shadow hover:shadow-md'>
+      <CardContent className='p-6'>
+        <div className='flex items-center justify-between'>
+          <div className='space-y-4'>
+            <h3 className='text-xl font-semibold text-gray-900'>{title}</h3>
+            <div className='flex items-center space-x-6'>
+              <div className='flex items-center text-gray-500'>
+                <MapPin className='mr-2 h-4 w-4' />
+                <span className='text-sm'>{location}</span>
               </div>
-              <div className="flex items-center text-gray-500">
-                <Clock className="mr-2 h-4 w-4" />
-                <span className="text-sm">{type}</span>
+              <div className='flex items-center text-gray-500'>
+                <Clock className='mr-2 h-4 w-4' />
+                <span className='text-sm'>{type}</span>
               </div>
             </div>
           </div>
           <Link
             href={url}
-            className="flex items-center text-blue-600 hover:text-blue-700"
+            className='flex items-center text-blue-600 hover:text-blue-700'
           >
             See Details
-            <ChevronRight className="ml-1 h-4 w-4" />
+            <ChevronRight className='ml-1 h-4 w-4' />
           </Link>
         </div>
       </CardContent>
@@ -83,11 +83,11 @@ const JobCard: React.FC<JobPosition> = ({ title, location, type, url }) => {
 
 const CareerPage: React.FC = () => {
   return (
-    <div className="mx-auto max-w-4xl space-y-8 px-4 py-8">
-      <h1 className="mx-auto mb-8 text-center text-3xl font-bold text-gray-900">
+    <div className='mx-auto max-w-4xl space-y-8 px-4 py-8'>
+      <h1 className='mx-auto mb-8 text-center text-3xl font-bold text-gray-900'>
         Open Positions
       </h1>
-      <div className="space-y-2">
+      <div className='space-y-2'>
         {positions.map(position => (
           <JobCard key={position.id} {...position} />
         ))}

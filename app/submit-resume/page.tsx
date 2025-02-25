@@ -1,6 +1,6 @@
 'use client';
 import { Card, CardContent, CardFooter, CardHeader } from '@/components/ui/card';
-import { Building2, Clock, Loader2, Mail } from 'lucide-react';
+import { Loader2 } from 'lucide-react';
 import { useForm } from 'react-hook-form';
 import { z } from 'zod';
 import { zodResolver } from '@hookform/resolvers/zod';
@@ -40,7 +40,7 @@ const formSchema = z.object({
   message: z.string().max(50).optional(),
 });
 
-export const ContactSection = () => {
+export default function ContactPage() {
   const [content, setContent] = React.useState<string | null>(null);
   const [filename, setFilename] = React.useState('');
   const [isLoading, setIsLoading] = React.useState(false);
@@ -68,6 +68,7 @@ export const ContactSection = () => {
       setFilename(file.name);
     }
   };
+
   async function onSubmit(values: z.infer<typeof formSchema>) {
     try {
       setIsLoading(true);
@@ -92,65 +93,33 @@ export const ContactSection = () => {
       }
     } catch (e) {
       console.error('Error sending request:', e);
-      alert('Failed to send request');
+      alert('Failed to send request, please try again later, or send email to katie.wang@talent-pioneer.com');
     }
   }
 
   return (
-    <section id="contact" className="container py-8 md:py-8 lg:max-w-screen-xl">
-      <section className="grid grid-cols-1 gap-8 md:grid-cols-2">
-        <div>
-          <div className="mb-4">
-            <h2 className="mb-2 text-lg tracking-wider text-primary">
-              Contact
-            </h2>
-
-            <h2 className="text-3xl font-bold md:text-4xl">Connect With Us</h2>
-          </div>
-          <p className="mb-8 text-muted-foreground lg:w-5/6">
-            Contact us today and experience our exceptional services firsthand.
-          </p>
-
-          <div className="flex flex-col gap-4">
-            <div>
-              <div className="mb-1 flex gap-2">
-                <Building2 color={'#60a5fa'} className="size-6">
-                  {' '}
-                </Building2>
-                <div className="font-bold">Find us</div>
-              </div>
-
-              <div>
-                {' '}
-                Suite 1122, Level 11, Menara Dungun, No. 46,
-                <br /> Jalan Dungun Bukit, Damansara, 50490, Kuala Lumpur
-              </div>
-            </div>
-
-            <div>
-              <div className="mb-1 flex gap-2">
-                <Mail color={'#60a5fa'} className="size-6" />
-                <div className="font-bold">Mail US</div>
-              </div>
-
-              <div> katie.wang@talent-pioneer.com</div>
-            </div>
-
-            <div>
-              <div className="flex gap-2">
-                <Clock color={'#60a5fa'} className="size-6" />
-                <div className="font-bold">Visit us</div>
-              </div>
-
-              <div>
-                <div>Monday - Friday</div>
-                <div>10AM - 4PM</div>
-              </div>
+    <div className="md:py-18 flex flex-col items-center justify-between py-12 lg:py-20">
+      {/*  title*/}
+      <div className="flex w-full items-center justify-center gap-6">
+        <div className="container px-4 md:px-6">
+          <div className="flex flex-col items-center justify-center space-y-3 text-center">
+            <div className="space-y-1">
+              <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+                Contact Us
+              </h1>
+              <p className="mx-auto max-w-[700px] text-gray-500 dark:text-gray-400 md:text-xl">
+                We&apos;re here to help with your talent acquisition needs. Reach out
+                to our team.
+              </p>
             </div>
           </div>
         </div>
-
-        <Card className="bg-muted/60 dark:bg-card">
+      </div>
+      {/*  submit-resume*/}
+      <div
+        className={'submit-resume mx-auto w-full max-w-3xl px-4 py-16 lg:py-20'}
+      >
+        <Card className="w-3xl bg-muted/60 dark:bg-card">
           <CardHeader className="text-2xl text-primary"> </CardHeader>
           <CardContent>
             <Form {...form}>
@@ -158,7 +127,7 @@ export const ContactSection = () => {
                 onSubmit={form.handleSubmit(onSubmit)}
                 className="grid w-full gap-4"
               >
-                <div className="flex flex-col gap-8 md:!flex-row">
+                <div className="flex flex-col gap-6 md:!flex-row">
                   <FormField
                     control={form.control}
                     name="firstName"
@@ -222,7 +191,7 @@ export const ContactSection = () => {
                     name="file"
                     render={() => (
                       <FormItem>
-                        <FormLabel>Upload File</FormLabel>
+                        <FormLabel>Upload CV File</FormLabel>
                         <FormControl>
                           <Input
                             type="file"
@@ -242,7 +211,7 @@ export const ContactSection = () => {
                     name="message"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>Message</FormLabel>
+                        <FormLabel>Message（Optional）</FormLabel>
                         <FormControl>
                           <Textarea
                             rows={5}
@@ -267,7 +236,7 @@ export const ContactSection = () => {
 
           <CardFooter></CardFooter>
         </Card>
-      </section>
-    </section>
+      </div>
+    </div>
   );
-};
+}

@@ -1,15 +1,8 @@
 'use client';
 
 import { Card, CardContent } from '@/components/ui/card';
-import {
-  Users,
-  GraduationCap,
-  Target,
-  UserCheck,
-  LineChart,
-  Search,
-} from 'lucide-react';
-import React from 'react';
+import { GraduationCap, LineChart, Search, Target, UserCheck, Users } from 'lucide-react';
+import type React from 'react';
 
 interface Service {
   id: string;
@@ -24,7 +17,7 @@ const employerServices: Service[] = [
     id: 'es1',
     title: 'Talent Recruitment Services',
     description: 'Comprehensive recruitment solutions for enterprises',
-    icon: <Search className='h-8 w-8 text-blue-600' />,
+    icon: <Search className="h-8 w-8 text-blue-600" />,
     subServices: [
       'Executive headhunting services',
       'Junior and mid-level bulk recruitment',
@@ -35,7 +28,7 @@ const employerServices: Service[] = [
     id: 'es2',
     title: 'Training and Development',
     description: 'Enhance enterprise human resource management capabilities',
-    icon: <LineChart className='h-8 w-8 text-blue-600' />,
+    icon: <LineChart className="h-8 w-8 text-blue-600" />,
     subServices: [
       'HR development and performance management',
       'Industry-specific solutions and best practices',
@@ -49,7 +42,7 @@ const jobSeekerServices: Service[] = [
     id: 'js1',
     title: 'Career Consultation',
     description: 'Professional career development guidance services',
-    icon: <UserCheck className='h-8 w-8 text-blue-600' />,
+    icon: <UserCheck className="h-8 w-8 text-blue-600" />,
     subServices: [
       'Resume writing guidance',
       'Interview skills training',
@@ -60,7 +53,7 @@ const jobSeekerServices: Service[] = [
     id: 'js2',
     title: 'Career Assessment',
     description: 'Discover personal potential and match ideal careers',
-    icon: <Target className='h-8 w-8 text-blue-600' />,
+    icon: <Target className="h-8 w-8 text-blue-600" />,
     subServices: [
       'Personalized competency assessment',
       'Career interest exploration',
@@ -76,18 +69,18 @@ const ServiceCard: React.FC<Service> = ({
   subServices,
 }) => {
   return (
-    <Card className='h-full transition-all hover:shadow-lg'>
-      <CardContent className='p-6'>
-        <div className='mb-4 inline-block rounded-xl bg-blue-50 p-3'>
+    <Card className="h-full transition-all hover:shadow-lg">
+      <CardContent className="p-6">
+        <div className="mb-4 inline-block rounded-xl bg-blue-50 p-3">
           {icon}
         </div>
-        <h3 className='mb-3 text-xl font-semibold text-gray-900'>{title}</h3>
-        <p className='mb-4 text-gray-600'>{description}</p>
+        <h3 className="mb-3 text-xl font-semibold text-gray-900">{title}</h3>
+        <p className="mb-4 text-gray-600">{description}</p>
         {subServices && (
-          <ul className='space-y-2'>
+          <ul className="space-y-2">
             {subServices.map((service, index) => (
-              <li key={index} className='flex items-center text-gray-600'>
-                <div className='mr-2 h-1.5 w-1.5 rounded-full bg-blue-600' />
+              <li key={index} className="flex items-center text-gray-600">
+                <div className="mr-2 h-1.5 w-1.5 rounded-full bg-blue-600" />
                 {service}
               </li>
             ))}

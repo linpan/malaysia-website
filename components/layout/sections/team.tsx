@@ -1,15 +1,10 @@
 import GithubIcon from '@/components/icons/Github';
 import LinkedInIcon from '@/components/icons/Linkedin';
 import XIcon from '@/components/icons/X';
-import {
-  Card,
-  CardContent,
-  CardHeader,
-  CardTitle,
-  CardFooter,
-} from '@/components/ui/card';
+import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import Image from 'next/image';
 import Link from 'next/link';
+
 interface TeamProps {
   imageUrl: string;
   firstName: string;
@@ -25,7 +20,7 @@ export const TeamSection = () => {
   const teamList: TeamProps[] = [
     {
       imageUrl:
-        'https://images.unsplash.com/photo-1616805765352-beedbad46b2a?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        '/team_01.jpg',
       firstName: 'Michael',
       lastName: 'Holland',
       positions: ['DevOps Engineer', 'CI/CD Pipeline Mastermind'],
@@ -38,7 +33,7 @@ export const TeamSection = () => {
     },
     {
       imageUrl:
-        'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        '/team_02.jpg',
       firstName: 'Zoe',
       lastName: 'Garcia',
       positions: ['JavaScript Evangelist', 'Deno Champion'],

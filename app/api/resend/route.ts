@@ -1,33 +1,37 @@
-// see: https://github.com/resend/resend-examples/blob/main/with-attachments-content/src/pages/index.tsx
 import { resend } from '@/lib/resend';
-import type { NextApiRequest, NextApiResponse } from 'next';
+import { NextResponse } from 'next/server';
 
-const send = async (req: NextApiRequest, res: NextApiResponse) => {
-  const { method } = req;
-  const { content, filename } = req.body;
+export async function POST(req: Request) {
+  try {
+    const body = await req.json();
+    const { attachment, filename, name, email, comment } = body;
+    const html = `
+    <div style="max-width: 600px; margin: 0 auto; padding: 20px; font-family: Arial, sans-serif;">
+      <h2 style="color: #333; border-bottom: 2px solid #60a5fa; padding-bottom: 10px;">Contact Form Submission</h2>
+      <p style="font-size: 16px; margin-bottom: 10px;"><strong>Name:</strong> ${name}</p>
+      <p style="font-size: 16px; margin-bottom: 10px;"><strong>Email:</strong> ${email}</p>
+      <p style="font-size: 16px; margin-bottom: 10px;"><strong>Message:</strong> ${comment}</p>
+    </div>
+    `;
+    const { data } = await resend.emails.send({
+      from: 'ACM <onboarding@resend.dev>',
+      to: ['yidiyu0507s@163.com'],
+      subject: 'Receipt for your payment',
+      html: html,
+      attachments: [
+        {
+          content: attachment,
+          filename: filename,
+        },
+      ],
+    });
 
-  switch (method) {
-    case 'POST': {
-      const { data } = await resend.emails.send({
-        from: 'Acme <onboarding@resend.dev>',
-        to: ['delivered@resend.dev'],
-        subject: 'Receipt for your payment',
-        html: '<p>Thanks for the payment</p>',
-        attachments: [
-          {
-            content,
-            filename,
-          },
-        ],
-      });
-
-      // @ts-expect-error make build pass
-      return res.status(200).send({ data: data.id });
-    }
-    default:
-      res.setHeader('Allow', ['POST']);
-      res.status(405).end(`Method ${method} Not Allowed`);
+    return NextResponse.json({ data: data?.id }, { status: 200 });
+  } catch (error) {
+    console.error('Error sending email:', error);
+    return NextResponse.json(
+      { error: 'Failed to send email' },
+      { status: 500 },
+    );
   }
-};
-
-export default send;
+}

@@ -63,8 +63,12 @@ export function Header() {
           </NavigationMenu>
         </div>
         <div className="hidden md:block">
-          <Button className="rounded bg-amber-600 px-6 py-2 font-mono font-semibold uppercase text-white hover:bg-amber-500">
-            Contact Us
+          <Button
+            as="a"
+            href="/submit-resume"
+            className="shadow-xs rounded-md bg-gradient-to-tr from-[#421fcb] to-[#aa1fcd] px-3.5 py-2.5 text-sm font-semibold text-white hover:opacity-90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
+          >
+            Deposit Resume
           </Button>
         </div>
       </div>

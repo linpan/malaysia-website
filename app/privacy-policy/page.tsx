@@ -1,7 +1,7 @@
 // app/terms-of-service/page.tsx
 'use client';
 
-import React from 'react';
+import type React from 'react';
 
 interface SectionProps {
   title: string;

@@ -3,7 +3,7 @@
 
 import { Separator } from '@/components/ui/separator';
 import { Card } from '@/components/ui/card';
-import React from 'react';
+import type React from 'react';
 
 interface TermsSectionProps {
   title: string;
@@ -11,9 +11,9 @@ interface TermsSectionProps {
 }
 
 const TermsSection: React.FC<TermsSectionProps> = ({ title, children }) => (
-  <section className='mb-8'>
-    <h2 className='mb-4 text-xl font-semibold text-gray-900'>{title}</h2>
-    <div className='space-y-4 text-gray-600'>{children}</div>
+  <section className="mb-8">
+    <h2 className="mb-4 text-xl font-semibold text-gray-900">{title}</h2>
+    <div className="space-y-4 text-gray-600">{children}</div>
   </section>
 );
 

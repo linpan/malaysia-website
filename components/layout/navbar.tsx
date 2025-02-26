@@ -28,7 +28,7 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-40 bg-blue-600 bg-card bg-opacity-15 shadow">
-      <div className="container mx-auto flex items-center justify-between px-8 py-4">
+      <div className="container mx-auto flex items-center justify-between max-w-7xl px-20 py-4">
         <div className="relative">
           <Link href="/">
             <Image
@@ -66,9 +66,9 @@ export function Header() {
           <Button
             as="a"
             href="/submit-resume"
-            className="shadow-xs rounded-md bg-gradient-to-tr from-[#421fcb] to-[#aa1fcd] px-3.5 py-2.5 text-sm font-semibold text-white hover:opacity-90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
+            className="shadow-xs rounded-md bg-[#FCCE08] px-3.5 py-2.5 text-sm font-semibold text-black hover:opacity-90 focus-visible:outline-2 focus-visible:outline-offset-2"
           >
-            Deposit Resume
+            Contact Us
           </Button>
         </div>
       </div>

@@ -1,6 +1,6 @@
 'use client';
 import * as React from 'react';
-import { MapPin, Mail } from 'lucide-react';
+import { Mail, MapPin } from 'lucide-react';
 
 import { Separator } from '@/components/ui/separator';
 
@@ -74,7 +74,7 @@ export function FooterSection() {
                   />
                   <span className="text-slate-300">
                     Suite 1122, Level 11, Menara Dungun, No. 46,
-                    <br /> Jalan Dungun Bukit, Damansara, 50490, Kuala Lumpur
+                    <br /> Jalan Dungun, Bukit Damansara, 50490, Kuala Lumpur
                   </span>
                 </div>
                 <div className="flex items-center space-x-3">
@@ -108,10 +108,8 @@ export function FooterSection() {
         <div className="container mx-auto px-4 py-6">
           <div className="flex flex-col items-center justify-between text-sm text-slate-300 md:flex-row">
             <p>
-              &copy; {currentYear} TalentPioneer. All rights reserved. developed{' '}
-              <a href="https://www.toadd.cn" target="_blank" rel="noopener">
-                PromptTech
-              </a>
+              &copy; {currentYear} TalentPioneer. Agensi Pekerjaan Talent
+              Pioneer Consulting Sdn. Bhd. (202401041600) (1587446-K)
             </p>
             <div className="mt-4 flex space-x-6 md:mt-0">
               <Link

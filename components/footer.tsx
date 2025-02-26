@@ -1,6 +1,6 @@
 'use client';
 import * as React from 'react';
-import { MapPin, Mail } from 'lucide-react';
+import { Mail, MapPin } from 'lucide-react';
 
 import { Separator } from '@/components/ui/separator';
 import { Social } from '@/components/layout/sections/social';
@@ -10,7 +10,7 @@ export function FooterSection() {
   const currentYear = new Date().getFullYear();
   return (
     <>
-      <footer className="bg-slate-900 text-white">
+      <footer className="bg-brandSecondary text-white">
         {/* Main Footer Content */}
         <div className="container mx-auto px-4 py-12">
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
@@ -107,10 +107,9 @@ export function FooterSection() {
         <div className="container mx-auto px-4 py-6">
           <div className="flex flex-col items-center justify-between text-sm text-slate-300 md:flex-row">
             <p>
-              &copy; {currentYear} TalentPioneer. All rights reserved. developed{' '}
-              <a href="https://www.toadd.cn" target="_blank" rel="noopener">
-                PromptTech
-              </a>
+              &copy; {currentYear} TalentPioneer. All rights reserved. Agensi
+              Pekerjaan Talent Pioneer Consulting Sdn. Bhd. (202401041600)
+              (1587446-K)
             </p>
             <div className="mt-4 flex space-x-6 md:mt-0">
               <Link

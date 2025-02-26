@@ -122,15 +122,16 @@ export const ContactSection = () => {
 
               <div>
                 {' '}
-                Suite 1122, Level 11, Menara Dungun, No. 46,
-                <br /> Jalan Dungun Bukit, Damansara, 50490, Kuala Lumpur
+                Suite 1122, Level 11, Menara Dungun,
+                <br /> No. 46, Jalan Dungun, Bukit Damansara,
+                <br /> 50490, Kuala Lumpur
               </div>
             </div>
 
             <div>
               <div className="mb-1 flex gap-2">
                 <Mail color={'#60a5fa'} className="size-6" />
-                <div className="font-bold">Mail US</div>
+                <div className="font-bold">EMail US</div>
               </div>
 
               <div> katie.wang@talent-pioneer.com</div>
@@ -144,7 +145,17 @@ export const ContactSection = () => {
 
               <div>
                 <div>Monday - Friday</div>
-                <div>10AM - 4PM</div>
+                <div>9AM - 6PM</div>
+              </div>
+            </div>
+            <div>
+              <div className="flex gap-2">
+                <Clock color={'#60a5fa'} className="size-6" />
+                <div className="font-bold">Call us</div>
+              </div>
+
+              <div>
+                <div>(+60) 03-4812 8919</div>
               </div>
             </div>
           </div>
@@ -258,8 +269,17 @@ export const ContactSection = () => {
                   />
                 </div>
 
-                <Button className="mt-4 bg-brandPrimary text-base" disabled={isLoading}>
-                  {isLoading ? <Loader2 className="mr-2 h-4 w-4 animate-spin" /> : 'Submit'}
+                <Button
+                  className="mt-4 flex h-12 items-center justify-center space-x-2 rounded-md bg-brandSecondary px-4 py-2 text-base font-bold text-white transition-all duration-200 ease-in-out hover:bg-brandSecondary/90 focus:outline-none focus:ring-2 focus:ring-brandSecondary/50 focus:ring-offset-2 active:bg-brandSecondary/80 disabled:cursor-not-allowed disabled:opacity-70"
+                  disabled={isLoading}
+                  aria-busy={isLoading}
+                  type="submit"
+                >
+                  {isLoading ? (
+                    <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                  ) : (
+                    'Submit'
+                  )}
                 </Button>
               </form>
             </Form>

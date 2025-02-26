@@ -1,12 +1,12 @@
 'use client';
+import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardFooter, CardHeader } from '@/components/ui/card';
+import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form';
+import { Input } from '@/components/ui/input';
+import { zodResolver } from '@hookform/resolvers/zod';
 import { Loader2 } from 'lucide-react';
 import { useForm } from 'react-hook-form';
 import { z } from 'zod';
-import { zodResolver } from '@hookform/resolvers/zod';
-import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form';
-import { Input } from '@/components/ui/input';
-import { Button } from '@/components/ui/button';
 
 import { Textarea } from '@/components/ui/textarea';
 import React from 'react';
@@ -93,7 +93,9 @@ export default function ContactPage() {
       }
     } catch (e) {
       console.error('Error sending request:', e);
-      alert('Failed to send request, please try again later, or send email to katie.wang@talent-pioneer.com');
+      alert(
+        'Failed to send request, please try again later, or send email to katie.wang@talent-pioneer.com',
+      );
     }
   }
 
@@ -108,8 +110,8 @@ export default function ContactPage() {
                 Contact Us
               </h1>
               <p className="mx-auto max-w-[700px] text-gray-500 dark:text-gray-400 md:text-xl">
-                We&apos;re here to help with your talent acquisition needs. Reach out
-                to our team.
+                We&apos;re here to help with your talent acquisition needs.
+                Reach out to our team.
               </p>
             </div>
           </div>
@@ -227,8 +229,15 @@ export default function ContactPage() {
                   />
                 </div>
 
-                <Button className="mt-4 bg-brandPrimary text-base" disabled={isLoading}>
-                  {isLoading ? <Loader2 className="mr-2 h-4 w-4 animate-spin" /> : 'Submit'}
+                <Button
+                  className="mt-4 bg-brandPrimary text-base"
+                  disabled={isLoading}
+                >
+                  {isLoading ? (
+                    <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                  ) : (
+                    'Submit'
+                  )}
                 </Button>
               </form>
             </Form>

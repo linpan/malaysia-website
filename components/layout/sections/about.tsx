@@ -9,7 +9,7 @@ export default function About() {
         <div className="md:w-1/2">
           <span className="text-xs text-gray-500 md:text-sm">ABOUT</span>
           <h2 className="text-2xl font-semibold leading-tight text-black md:text-5xl md:leading-relaxed">
-            About <span className="uppercase text-[#3C50C2]">Us</span>
+            About <span className="uppercase text-brandSecondary">Us</span>
           </h2>
           <p className="mb-8 mt-4 text-base text-black">
             Welcome to TalentPioneer, where innovation meets opportunity in the
@@ -22,7 +22,7 @@ export default function About() {
             we’re here to help you find the right fit and unlock new career and
             business growth opportunities.
           </p>
-          <p className="text-base font-bold text-[#3C50C2]">
+          <p className="text-base font-bold text-brandSecondary">
             Discover how TalentPioneer can transform your hiring process and
             propel your career to new heights. Let’s shape the future of work
             together.
@@ -30,10 +30,11 @@ export default function About() {
         </div>
         <div className="relative mt-auto flex flex-col items-center justify-center md:flex md:w-1/2">
           <Image
-            src="/greeting.png"
+            src="/team/about-team.webp"
             alt="About"
             width={625}
             height={350}
+            blurDataURL="blur.webp"
             className="w-full object-cover"
           />
         </div>

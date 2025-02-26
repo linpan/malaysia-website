@@ -1,8 +1,8 @@
 // app/terms-of-service/page.tsx
 'use client';
 
-import { Separator } from '@/components/ui/separator';
 import { Card } from '@/components/ui/card';
+import { Separator } from '@/components/ui/separator';
 import type React from 'react';
 
 interface TermsSectionProps {

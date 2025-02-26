@@ -32,8 +32,7 @@ const AboutPage: React.FC = () => {
     },
   ];
   return (
-    <div
-      className="relative flex items-center justify-center bg-gradient-to-b from-indigo-100 via-white to-indigo-50 md:py-16 lg:py-24">
+    <div className="relative flex items-center justify-center bg-white bg-gradient-to-b md:py-16 lg:py-24">
       <div className="absolute inset-0 mt-24">
         <Grid className={'opacity-30'} />
       </div>
@@ -47,7 +46,7 @@ const AboutPage: React.FC = () => {
             for? Reach out to our support team by{' '}
             <a
               href="#"
-              className="font-semibold text-indigo-600 hover:text-indigo-500"
+              className="rounded-sm font-semibold text-brandSecondary underline-offset-2 transition-colors duration-300 hover:text-brandSecondary/80 hover:underline focus:outline-none focus:ring-2 focus:ring-brandSecondary/30 focus:ring-offset-1"
             >
               sending us an email
             </a>{' '}

@@ -19,8 +19,7 @@ interface SocialNetworkProps {
 export const TeamSection = () => {
   const teamList: TeamProps[] = [
     {
-      imageUrl:
-        '/team_01.jpg',
+      imageUrl: '/team_01.jpg',
       firstName: 'Michael',
       lastName: 'Holland',
       positions: ['DevOps Engineer', 'CI/CD Pipeline Mastermind'],
@@ -32,8 +31,7 @@ export const TeamSection = () => {
       ],
     },
     {
-      imageUrl:
-        '/team_02.jpg',
+      imageUrl: '/team_02.jpg',
       firstName: 'Zoe',
       lastName: 'Garcia',
       positions: ['JavaScript Evangelist', 'Deno Champion'],

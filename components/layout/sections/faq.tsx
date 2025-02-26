@@ -1,9 +1,4 @@
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from '@/components/ui/accordion';
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 
 export const FAQSection = () => {
   const leftAccordionData = [
@@ -37,20 +32,22 @@ export const FAQSection = () => {
     <div className="bg-background bg-gray-50">
       <section id="faq" className="container max-w-3xl py-12 sm:py-20">
         <div className="mb-8 text-center">
-          <h2 className="text-center text-3xl font-bold md:text-4xl">
+          <h2 className="text-center text-3xl font-bold text-brandSecondary md:text-4xl">
             Frequently asked questions
           </h2>
         </div>
 
         <div className="grid gap-8 md:grid-cols-1">
-          <div className="flex flex-col gap-6">
+          <div className="flex flex-col gap-6 text-brandSecondary">
             <Accordion type="single" collapsible>
               {leftAccordionData.map(({ question, answer, value }) => (
                 <AccordionItem key={value} value={value}>
-                  <AccordionTrigger className="text-left text-base font-bold">
+                  <AccordionTrigger className="text-left text-base font-bold text-brandSecondary">
                     {question}
                   </AccordionTrigger>
-                  <AccordionContent>{answer}</AccordionContent>
+                  <AccordionContent className={'text-base leading-6'}>
+                    {answer}
+                  </AccordionContent>
                 </AccordionItem>
               ))}
             </Accordion>

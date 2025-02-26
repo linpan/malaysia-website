@@ -43,8 +43,8 @@ export default function HeroSection() {
             </div>
             <div className="text-center">
               <h1 className="w-full text-balance text-5xl font-semibold tracking-tight text-white sm:text-5xl">
-                <div>Your Talent, Our Mission.</div>
-                <div>Building Futures, Together.</div>
+                <div>Your Talent, Our Mission</div>
+                <div>Building Futures, Together</div>
               </h1>
               <p className="mt-5 text-pretty text-lg font-medium text-gray-300 sm:text-xl/8">
                 We empower both individuals and organizations to achieve their

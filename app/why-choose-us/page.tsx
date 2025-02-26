@@ -1,4 +1,3 @@
-import DotCorner from '@/components/svg/dot';
 import React from 'react';
 
 import Image from 'next/image';
@@ -15,40 +14,41 @@ const Choose = () => {
                 <div className="w-full px-3 sm:px-4 xl:w-1/2">
                   <div className="py-3 sm:py-4">
                     <Image
-                      src="/image-1.webp"
+                      src="/team/why-us-885.webp"
                       alt="Descriptive alt text"
                       className="w-full rounded-2xl"
                       loading="lazy"
                       width={500}
                       height={500}
+                      placeholder="blur"
+                      blurDataURL="blur.webp"
                     />
                   </div>
                   <div className="py-3 sm:py-4">
                     <Image
-                      src="/image-2.webp"
+                      src="/team/why-us-886.webp"
                       alt="Descriptive alt text"
                       className="w-full rounded-2xl"
                       loading="lazy"
                       width={500}
                       height={500}
+                      placeholder="blur"
+                      blurDataURL="blur.webp"
                     />
                   </div>
                 </div>
                 <div className="w-full px-3 sm:px-4 xl:w-1/2">
                   <div className="relative z-10 my-4">
                     <Image
-                      src="/image-3.webp"
+                      src="/team/why-us-887.webp"
                       alt="image"
                       className="w-full rounded-2xl bg-gray-200"
                       width={500}
                       height={500}
                       loading="lazy"
                       placeholder="blur"
-                      blurDataURL="https://i.ibb.co/9y7nYCD/image-3.jpg"
+                      blurDataURL="blur.webp"
                     />
-                    <span className="absolute -bottom-7 -right-7 z-[-1]">
-                      <DotCorner />
-                    </span>
                   </div>
                 </div>
               </div>
@@ -56,7 +56,7 @@ const Choose = () => {
 
             <div className="w-full px-4 lg:w-1/2 xl:w-5/12">
               <div className="mt-10 gap-0.5 lg:mt-0">
-                <span className="mb-4 block text-lg font-semibold text-primary">
+                <span className="mb-4 block text-lg font-semibold text-brandSecondary">
                   Why Choose Us
                 </span>
                 <h2 className="text-dark mb-5 text-3xl font-bold sm:text-[40px]/[48px]">
@@ -75,7 +75,7 @@ const Choose = () => {
                 </p>
                 <Link
                   href="#"
-                  className="inline-flex items-center justify-center rounded-md border border-transparent bg-primary px-7 py-3 text-center text-base font-medium text-white hover:bg-opacity-90"
+                  className="inline-flex items-center justify-center rounded-md border border-transparent bg-brandSecondary px-7 py-3 text-center text-base font-medium text-white"
                 >
                   Get Started
                 </Link>

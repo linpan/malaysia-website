@@ -1,5 +1,4 @@
 // types.ts
-import Image from 'next/image';
 
 type ServiceCard = {
   title: string;
@@ -52,15 +51,7 @@ export default function Services() {
               className="group border-none bg-blue-100/50 transition-shadow duration-200 hover:bg-blue-100 hover:shadow-lg"
             >
               <CardHeader>
-                <div className="mx-auto mb-4 text-blue-900">
-                  <Image
-                    src={`/${service.icon}`}
-                    width={200}
-                    height={200}
-                    alt="five"
-                  />
-                </div>
-                <CardTitle className="mx-auto text-xl font-semibold text-blue-900">
+                <CardTitle className="mx-auto text-xl font-semibold text-brandSecondary">
                   {service.title}
                 </CardTitle>
               </CardHeader>

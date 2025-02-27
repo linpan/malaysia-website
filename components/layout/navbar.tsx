@@ -28,7 +28,7 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-40 bg-blue-600 bg-card bg-opacity-15 shadow">
-      <div className="container mx-auto flex items-center justify-between max-w-7xl px-20 py-4">
+      <div className="container mx-auto flex max-w-7xl items-center justify-between px-20 py-4">
         <div className="relative">
           <Link href="/">
             <Image

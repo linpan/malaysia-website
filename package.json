@@ -8,10 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "format": "prettier --write .",
-    "clean": "rm -rf .next node_modules",
-    "biome:lint": "biome lint --apply ./app/**/*",
-    "biome:format": "biome format ./app/**/* --write",
-    "biome:check": "biome check --apply ./app/**/*"
+    "clean": "rm -rf .next node_modules"
   },
   "dependencies": {
     "@devnomic/marquee": "^1.0.3",

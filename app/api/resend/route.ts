@@ -14,9 +14,9 @@ export async function POST(req: Request) {
     </div>
     `;
     const { data } = await resend.emails.send({
-      from: 'ACM <onboarding@resend.dev>',
-      to: ['yidiyu0507s@163.com'],
-      subject: 'Receipt for your payment',
+      from: 'User <onboarding@resend.dev>',
+      to: ['katie.wang@talent-pioneer.com'],
+      subject: 'CV',
       html: html,
       attachments: [
         {

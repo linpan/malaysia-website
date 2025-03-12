@@ -1,7 +1,9 @@
+'use client';
+
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 
 export const FAQSection = () => {
-  const leftAccordionData = [
+  const faqData = [
     {
       value: 'item-1',
       question: '1. How does TalentPioneer help me find a job?',
@@ -12,7 +14,7 @@ export const FAQSection = () => {
       value: 'item-2',
       question: '2. How can I receive job notifications from TalentPioneer?',
       answer:
-        'You can receive job notifications from TalentPioneer by signing up on our website and creating a profile. Once your profile is set up, you can customize your job preferences, and we’ll send you email alerts for job openings that match your criteria.',
+        'You can receive job notifications from TalentPioneer by signing up on our website and creating a profile. Once your profile is set up, you can customize your job preferences, and we\'ll send you email alerts for job openings that match your criteria.',
     },
     {
       value: 'item-3',
@@ -29,23 +31,23 @@ export const FAQSection = () => {
   ];
 
   return (
-    <div className="bg-background bg-gray-50">
-      <section id="faq" className="container max-w-3xl py-12 sm:py-20">
-        <div className="mb-8 text-center">
-          <h2 className="text-center text-3xl font-bold text-brandSecondary md:text-4xl">
+    <div className="bg-gray-50 w-full text-base">
+      <section id="faq" className="container px-4 sm:px-6 py-8 sm:py-12 md:py-16 lg:py-20 mx-auto max-w-7xl">
+        <div className="mb-6 sm:mb-8 md:mb-10 text-center">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-brandSecondary">
             Frequently asked questions
           </h2>
         </div>
 
-        <div className="grid gap-8 md:grid-cols-1">
-          <div className="flex flex-col gap-6 text-brandSecondary">
-            <Accordion type="single" collapsible>
-              {leftAccordionData.map(({ question, answer, value }) => (
-                <AccordionItem key={value} value={value}>
-                  <AccordionTrigger className="text-left text-base font-bold text-brandSecondary">
+        <div className="max-w-3xl mx-auto">
+          <div className="flex flex-col gap-4 sm:gap-6 text-brandSecondary">
+            <Accordion type="single" collapsible className="w-full">
+              {faqData.map(({ question, answer, value }) => (
+                <AccordionItem key={value} value={value} className="border-b border-gray-200">
+                  <AccordionTrigger className="text-left text-sm sm:text-base font-bold text-brandSecondary py-4 px-2">
                     {question}
                   </AccordionTrigger>
-                  <AccordionContent className={'text-base leading-6'}>
+                  <AccordionContent className="text-sm sm:text-base leading-relaxed px-2 pb-4">
                     {answer}
                   </AccordionContent>
                 </AccordionItem>

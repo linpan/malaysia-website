@@ -4,15 +4,20 @@ import Image from 'next/image';
 
 export default function About() {
   return (
-    <section id="about" className="mx-auto py-8 px-4 sm:py-16 md:py-24 lg:py-32 lg:max-w-screen-xl">
-      <div className="wrapper mx-auto max-w-screen-xl px-2 sm:px-4 md:px-6 md:flex md:gap-8 lg:gap-12">
+    <section
+      id="about"
+      className="mx-auto px-4 py-8 sm:py-16 md:py-24 lg:max-w-screen-xl lg:py-32"
+    >
+      <div className="wrapper mx-auto max-w-screen-xl px-2 sm:px-4 md:flex md:gap-8 md:px-6 lg:gap-12">
         <div className="mb-8 md:mb-0 md:w-1/2">
-          <span className="text-xs text-gray-500 sm:text-sm md:text-base">ABOUT</span>
+          <span className="text-xs text-gray-500 sm:text-sm md:text-base">
+            ABOUT
+          </span>
           <h2
-            className="text-2xl font-semibold leading-tight text-black sm:text-3xl md:text-4xl lg:text-5xl md:leading-relaxed">
+            className="text-2xl font-semibold leading-tight text-black sm:text-3xl md:text-4xl md:leading-relaxed lg:text-5xl">
             About <span className="uppercase text-brandSecondary">Us</span>
           </h2>
-          <p className="mb-6 mt-3 sm:mt-4 text-sm sm:text-base text-black lg:text-lg">
+          <p className="mb-6 mt-3 text-sm text-black sm:mt-4 sm:text-base lg:text-lg">
             Welcome to TalentPioneer, where innovation meets opportunity in the
             heart of Southeast Asia. At TalentPioneer we're not just a
             recruiting agency; we're your strategic partner in navigating the
@@ -23,7 +28,7 @@ export default function About() {
             we're here to help you find the right fit and unlock new career and
             business growth opportunities.
           </p>
-          <p className="text-sm sm:text-base lg:text-lg font-bold text-brandSecondary">
+          <p className="text-sm font-bold text-brandSecondary sm:text-base lg:text-lg">
             Discover how TalentPioneer can transform your hiring process and
             propel your career to new heights. Let's shape the future of work
             together.
@@ -35,7 +40,7 @@ export default function About() {
             alt="About"
             width={625}
             height={350}
-            className="w-full rounded-lg shadow-md object-cover"
+            className="w-full rounded-lg object-cover shadow-md"
           />
         </div>
       </div>

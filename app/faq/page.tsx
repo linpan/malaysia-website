@@ -42,7 +42,12 @@ const AboutPage: React.FC = () => {
           preserveAspectRatio="none"
         >
           <defs>
-            <pattern id="grid-pattern" width="40" height="40" patternUnits="userSpaceOnUse">
+            <pattern
+              id="grid-pattern"
+              width="40"
+              height="40"
+              patternUnits="userSpaceOnUse"
+            >
               <path
                 d="M 40 0 L 0 0 0 40"
                 fill="none"
@@ -50,12 +55,22 @@ const AboutPage: React.FC = () => {
                 strokeWidth="1"
               />
             </pattern>
-            <pattern id="dots-pattern" width="20" height="20" patternUnits="userSpaceOnUse">
+            <pattern
+              id="dots-pattern"
+              width="20"
+              height="20"
+              patternUnits="userSpaceOnUse"
+            >
               <circle cx="3" cy="3" r="1" fill="rgba(0, 0, 0, 0.1)" />
             </pattern>
           </defs>
           <rect width="100%" height="100%" fill="url(#grid-pattern)" />
-          <rect width="100%" height="100%" fill="url(#dots-pattern)" opacity="0.4" />
+          <rect
+            width="100%"
+            height="100%"
+            fill="url(#dots-pattern)"
+            opacity="0.4"
+          />
           {/* 移除了两个彩色圆圈 */}
         </svg>
       </div>
@@ -67,12 +82,12 @@ const AboutPage: React.FC = () => {
             className="mt-2 text-3xl font-extrabold leading-tight tracking-tight text-gray-900 sm:text-4xl md:text-5xl">
             Frequently Asked Questions
           </p>
-          <p className="mx-auto mt-6 max-w-3xl text-base sm:text-lg text-gray-600 leading-relaxed">
+          <p className="mx-auto mt-6 max-w-3xl text-base leading-relaxed text-gray-600 sm:text-lg">
             Have a different question and can't find the answer you're looking
             for? Reach out to our support team by{' '}
             <a
               href="#"
-              className="rounded-sm font-semibold text-base sm:text-lg text-brandSecondary underline-offset-2 transition-colors duration-300 hover:text-brandSecondary/80 hover:underline focus:outline-none focus:ring-2 focus:ring-brandSecondary/30 focus:ring-offset-1"
+              className="rounded-sm text-base font-semibold text-brandSecondary underline-offset-2 transition-colors duration-300 hover:text-brandSecondary/80 hover:underline focus:outline-none focus:ring-2 focus:ring-brandSecondary/30 focus:ring-offset-1 sm:text-lg"
             >
               sending us an email
             </a>{' '}
@@ -80,13 +95,21 @@ const AboutPage: React.FC = () => {
           </p>
         </div>
         <div className="faq-section mx-auto mb-12 mt-10 max-w-3xl flex-col gap-6">
-          <Accordion type="single" collapsible className="border rounded-lg bg-white/80 backdrop-blur-sm shadow-sm">
+          <Accordion
+            type="single"
+            collapsible
+            className="rounded-lg border bg-white/80 shadow-sm backdrop-blur-sm"
+          >
             {leftAccordionData.map(({ question, answer, value }) => (
-              <AccordionItem key={value} value={value} className="border-b last:border-b-0">
-                <AccordionTrigger className="text-left text-base sm:text-lg md:text-xl font-bold py-4 px-5">
+              <AccordionItem
+                key={value}
+                value={value}
+                className="border-b last:border-b-0"
+              >
+                <AccordionTrigger className="px-5 py-4 text-left text-base font-bold sm:text-lg md:text-xl">
                   {question}
                 </AccordionTrigger>
-                <AccordionContent className="text-base sm:text-lg leading-relaxed px-5 pb-5">
+                <AccordionContent className="px-5 pb-5 text-base leading-relaxed sm:text-lg">
                   {answer}
                 </AccordionContent>
               </AccordionItem>

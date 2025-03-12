@@ -98,7 +98,10 @@ export const ContactSection = () => {
   }
 
   return (
-    <section id="contact" className="container px-4 py-8 sm:px-6 md:py-12 lg:max-w-screen-xl">
+    <section
+      id="contact"
+      className="container px-4 py-8 sm:px-6 md:py-12 lg:max-w-screen-xl"
+    >
       <section className="grid grid-cols-1 gap-8 lg:grid-cols-2">
         {/* 联系信息部分 */}
         <div className="order-2 lg:order-1">
@@ -106,7 +109,9 @@ export const ContactSection = () => {
             <h2 className="mb-2 text-lg tracking-wider text-primary">
               Contact
             </h2>
-            <h2 className="text-2xl font-bold sm:text-3xl md:text-4xl">Connect With Us</h2>
+            <h2 className="text-2xl font-bold sm:text-3xl md:text-4xl">
+              Connect With Us
+            </h2>
           </div>
 
           <p className="mb-8 text-muted-foreground">
@@ -166,7 +171,9 @@ export const ContactSection = () => {
         {/* 表单部分 */}
         <Card className="order-1 border bg-muted/60 shadow-md lg:order-2">
           <CardHeader className="pb-2 pt-6">
-            <h3 className="text-xl font-semibold text-primary">Send us a message</h3>
+            <h3 className="text-xl font-semibold text-primary">
+              Send us a message
+            </h3>
           </CardHeader>
           <CardContent>
             <Form {...form}>
@@ -182,8 +189,7 @@ export const ContactSection = () => {
                     render={({ field }) => (
                       <FormItem>
                         <FormLabel>
-                          First Name{' '}
-                          <span className="text-red-500">*</span>
+                          First Name <span className="text-red-500">*</span>
                         </FormLabel>
                         <FormControl>
                           <Input placeholder="Leopoldo" {...field} />
@@ -198,8 +204,7 @@ export const ContactSection = () => {
                     render={({ field }) => (
                       <FormItem>
                         <FormLabel>
-                          Last Name{' '}
-                          <span className="text-red-500">*</span>
+                          Last Name <span className="text-red-500">*</span>
                         </FormLabel>
                         <FormControl>
                           <Input placeholder="Miranda" {...field} />
@@ -247,7 +252,8 @@ export const ContactSection = () => {
                         />
                       </FormControl>
                       <p className="text-xs text-muted-foreground">
-                        Supported formats: PDF, JPEG, JPG, PNG, DOC, DOCX, XLS, XLSX (Max: 5MB)
+                        Supported formats: PDF, JPEG, JPG, PNG, DOC, DOCX, XLS,
+                        XLSX (Max: 5MB)
                       </p>
                       <FormMessage />
                     </FormItem>

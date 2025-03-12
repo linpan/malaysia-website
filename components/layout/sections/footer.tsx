@@ -15,7 +15,9 @@ export function FooterSection() {
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
             {/* Company Info */}
             <div className="space-y-4">
-              <h3 className="text-lg font-bold sm:mb-4 sm:text-xl">TalentPioneer</h3>
+              <h3 className="text-lg font-bold sm:mb-4 sm:text-xl">
+                TalentPioneer
+              </h3>
               <p className="lowercase text-slate-300">
                 YOUR TALENT, OUR MISSION
               </p>
@@ -24,7 +26,9 @@ export function FooterSection() {
 
             {/* Services */}
             <div className="space-y-4">
-              <h3 className="text-lg font-bold sm:mb-4 sm:text-xl">Our Services</h3>
+              <h3 className="text-lg font-bold sm:mb-4 sm:text-xl">
+                Our Services
+              </h3>
               <ul className="space-y-2">
                 <li>
                   <a
@@ -63,7 +67,9 @@ export function FooterSection() {
 
             {/* Contact Info - 在小屏幕上使用更紧凑的布局 */}
             <div className="space-y-4">
-              <h3 className="text-lg font-bold sm:mb-4 sm:text-xl">Contact Us</h3>
+              <h3 className="text-lg font-bold sm:mb-4 sm:text-xl">
+                Contact Us
+              </h3>
               <div className="space-y-3">
                 <div className="flex items-start gap-2 sm:space-x-3">
                   <MapPin
@@ -77,13 +83,13 @@ export function FooterSection() {
                 </div>
                 <div className="flex items-center gap-2 sm:space-x-3">
                   <Mail className="flex-shrink-0 text-slate-300" size={18} />
-                  <span className="text-sm text-slate-300 sm:text-base break-all">
+                  <span className="break-all text-sm text-slate-300 sm:text-base">
                     HR@talent-pioneer.com
                   </span>
                 </div>
                 <div className="flex items-center gap-2 sm:space-x-3">
                   <Mail className="flex-shrink-0 text-slate-300" size={18} />
-                  <span className="text-sm text-slate-300 sm:text-base break-all">
+                  <span className="break-all text-sm text-slate-300 sm:text-base">
                     katie.wang@talent-pioneer.com
                   </span>
                 </div>
@@ -92,7 +98,9 @@ export function FooterSection() {
 
             {/* Business Hours */}
             <div className="space-y-4">
-              <h3 className="text-lg font-bold sm:mb-4 sm:text-xl">Business Hours</h3>
+              <h3 className="text-lg font-bold sm:mb-4 sm:text-xl">
+                Business Hours
+              </h3>
               <div className="space-y-1 text-sm text-slate-300 sm:space-y-2 sm:text-base">
                 <p>Monday - Friday</p>
                 <p>9:00 AM - 6:00 PM</p>
@@ -110,9 +118,15 @@ export function FooterSection() {
             className="flex flex-col items-center justify-between space-y-2 text-center text-xs text-slate-400 sm:flex-row sm:space-y-0 sm:text-sm">
             <p>&copy; {currentYear} TalentPioneer. All rights reserved.</p>
             <div className="flex flex-wrap justify-center gap-4 sm:justify-end">
-              <Link href="/privacy-policy" className="hover:text-white">Privacy Policy</Link>
-              <Link href="/terms-of-service" className="hover:text-white">Terms of Service</Link>
-              <Link href="/sitemap" className="hover:text-white">Sitemap</Link>
+              <Link href="/privacy-policy" className="hover:text-white">
+                Privacy Policy
+              </Link>
+              <Link href="/terms-of-service" className="hover:text-white">
+                Terms of Service
+              </Link>
+              <Link href="/sitemap" className="hover:text-white">
+                Sitemap
+              </Link>
             </div>
           </div>
         </div>

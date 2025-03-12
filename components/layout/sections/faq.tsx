@@ -31,24 +31,31 @@ export const FAQSection = () => {
   ];
 
   return (
-    <div className="bg-gray-50 w-full text-base sm:text-lg py-20 md:py-28 lg:py-32">
-      <section id="faq" className="container px-4 sm:px-6 py-8 sm:py-12 md:py-16 lg:py-20 mx-auto max-w-7xl">
-        <div className="mb-6 sm:mb-8 md:mb-10 text-center">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-brandSecondary">
+    <div className="w-full bg-gray-50 py-20 text-base sm:text-lg md:py-28 lg:py-32">
+      <section
+        id="faq"
+        className="container mx-auto max-w-7xl px-4 py-8 sm:px-6 sm:py-12 md:py-16 lg:py-20"
+      >
+        <div className="mb-6 text-center sm:mb-8 md:mb-10">
+          <h2 className="text-3xl font-bold text-brandSecondary sm:text-4xl md:text-5xl">
             Frequently asked questions
           </h2>
         </div>
 
-        <div className="max-w-3xl mx-auto">
-          <div className="flex flex-col gap-4 sm:gap-6 text-brandSecondary">
+        <div className="mx-auto max-w-3xl">
+          <div className="flex flex-col gap-4 text-brandSecondary sm:gap-6">
             <Accordion type="single" collapsible className="w-full">
               {faqData.map(({ question, answer, value }) => (
-                <AccordionItem key={value} value={value} className="border-b border-gray-200">
+                <AccordionItem
+                  key={value}
+                  value={value}
+                  className="border-b border-gray-200"
+                >
                   <AccordionTrigger
-                    className="text-left text-base sm:text-lg md:text-xl font-bold text-brandSecondary py-4 px-3 sm:px-4">
+                    className="px-3 py-4 text-left text-base font-bold text-brandSecondary sm:px-4 sm:text-lg md:text-xl">
                     {question}
                   </AccordionTrigger>
-                  <AccordionContent className="text-base sm:text-lg leading-relaxed px-3 sm:px-4 pb-4">
+                  <AccordionContent className="px-3 pb-4 text-base leading-relaxed sm:px-4 sm:text-lg">
                     {answer}
                   </AccordionContent>
                 </AccordionItem>

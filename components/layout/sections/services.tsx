@@ -42,32 +42,36 @@ export default function Services() {
         <div className="space-y-6 sm:space-y-8">
           <div className="space-y-3 text-center">
             <h2 className="text-2xl font-bold tracking-tight text-blue-900 sm:text-3xl md:text-4xl">
-              Why Choose <span className="text-blue-600 relative">
+              Why Choose{' '}
+              <span className="relative text-blue-600">
                 TalentPioneer?
-                <span className="absolute bottom-0 left-0 w-full h-1 bg-blue-400 rounded-full"></span>
+                <span className="absolute bottom-0 left-0 h-1 w-full rounded-full bg-blue-400"></span>
               </span>
             </h2>
           </div>
 
           <div className="grid grid-cols-1 gap-4 sm:gap-5 md:grid-cols-2 lg:grid-cols-3 lg:gap-6">
             {services.map((service, index) => (
-              <Link href={service.link} key={index}
-                    className="block group transition duration-300 transform hover:-translate-y-1">
+              <Link
+                href={service.link}
+                key={index}
+                className="group block transform transition duration-300 hover:-translate-y-1"
+              >
                 <Card
-                  className="h-full border border-blue-100 bg-white/80 transition-all duration-300
-                  hover:shadow-xl hover:shadow-blue-100/50 overflow-hidden backdrop-blur-sm"
-                >
-                  <CardHeader className="flex flex-row items-center gap-3 pb-2 pt-6 border-b border-blue-100/30">
-                    <div className="p-2 rounded-full bg-blue-50 group-hover:bg-blue-100 transition-colors duration-300">
+                  className="h-full overflow-hidden border border-blue-100 bg-white/80 backdrop-blur-sm transition-all duration-300 hover:shadow-xl hover:shadow-blue-100/50">
+                  <CardHeader className="flex flex-row items-center gap-3 border-b border-blue-100/30 pb-2 pt-6">
+                    <div className="rounded-full bg-blue-50 p-2 transition-colors duration-300 group-hover:bg-blue-100">
                       {service.icon}
                     </div>
                     <CardTitle
-                      className="text-lg font-semibold text-blue-800 sm:text-xl group-hover:text-blue-600 transition-colors duration-300">
+                      className="text-lg font-semibold text-blue-800 transition-colors duration-300 group-hover:text-blue-600 sm:text-xl">
                       {service.title}
                     </CardTitle>
                   </CardHeader>
                   <CardContent className="pt-4">
-                    <p className="text-sm text-gray-600 sm:text-base">{service.description}</p>
+                    <p className="text-sm text-gray-600 sm:text-base">
+                      {service.description}
+                    </p>
                   </CardContent>
                 </Card>
               </Link>

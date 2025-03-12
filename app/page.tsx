@@ -42,6 +42,7 @@ export default function Home() {
       {/*<SponsorsSection />*/}
       <About />
       <ServicesSection />
+      {/*Why Choose TalentPioneer?*/}
       <Services />
       {/*<TeamSection />*/}
       <ContactSection />

@@ -72,7 +72,7 @@ export function Header() {
         </div>
 
         {/* Desktop Navigation */}
-        <div className="hidden md:flex md:items-center">
+        <div className="hidden md:flex md:items-center mx-2">
           <NavigationMenu>
             <NavigationMenuList className="hidden flex-row space-x-1 md:flex lg:space-x-2">
               {navLinks.map(link => (

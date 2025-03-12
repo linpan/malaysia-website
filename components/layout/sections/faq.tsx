@@ -31,10 +31,10 @@ export const FAQSection = () => {
   ];
 
   return (
-    <div className="bg-gray-50 w-full text-base">
+    <div className="bg-gray-50 w-full text-base sm:text-lg py-20 md:py-28 lg:py-32">
       <section id="faq" className="container px-4 sm:px-6 py-8 sm:py-12 md:py-16 lg:py-20 mx-auto max-w-7xl">
         <div className="mb-6 sm:mb-8 md:mb-10 text-center">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-brandSecondary">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-brandSecondary">
             Frequently asked questions
           </h2>
         </div>
@@ -44,10 +44,11 @@ export const FAQSection = () => {
             <Accordion type="single" collapsible className="w-full">
               {faqData.map(({ question, answer, value }) => (
                 <AccordionItem key={value} value={value} className="border-b border-gray-200">
-                  <AccordionTrigger className="text-left text-sm sm:text-base font-bold text-brandSecondary py-4 px-2">
+                  <AccordionTrigger
+                    className="text-left text-base sm:text-lg md:text-xl font-bold text-brandSecondary py-4 px-3 sm:px-4">
                     {question}
                   </AccordionTrigger>
-                  <AccordionContent className="text-sm sm:text-base leading-relaxed px-2 pb-4">
+                  <AccordionContent className="text-base sm:text-lg leading-relaxed px-3 sm:px-4 pb-4">
                     {answer}
                   </AccordionContent>
                 </AccordionItem>

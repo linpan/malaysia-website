@@ -39,7 +39,7 @@ export default function Services() {
     <section className="mx-auto px-4 md:max-w-7xl md:py-24 lg:py-32">
       <div className="space-y-8">
         <div className="space-y-4 text-center">
-          <h2 className="text-3xl font-bold tracking-tight text-blue-900">
+          <h2 className="text-3xl font-bold tracking-tight  text-black">
             Why Choose TalentPioneer?
           </h2>
         </div>
@@ -51,12 +51,12 @@ export default function Services() {
               className="group border-none bg-blue-100/50 transition-shadow duration-200 hover:bg-blue-100 hover:shadow-lg"
             >
               <CardHeader>
-                <CardTitle className="mx-auto text-xl font-semibold text-brandSecondary">
+                <CardTitle className="mx-auto text-xl font-semibold text-black">
                   {service.title}
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-gray-600">{service.description}</p>
+                <p className="text-black/80">{service.description}</p>
               </CardContent>
             </Card>
           ))}

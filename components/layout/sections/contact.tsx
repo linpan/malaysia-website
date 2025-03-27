@@ -248,7 +248,7 @@ export const ContactSection = () => {
                           type="file"
                           accept={ACCEPTED_FILE_TYPES.join(',')}
                           onChange={onAddFileAction}
-                          className="file:mr-4 file:rounded file:border-0 file:bg-primary file:px-3 file:py-2 file:text-white hover:file:bg-primary/90"
+                          className="file:mr-4 file:rounded file:border-0 file:bg-primary file:px-3 file:py-1 file:text-white hover:file:bg-primary/90 flex items-center"
                         />
                       </FormControl>
                       <p className="text-xs text-muted-foreground">

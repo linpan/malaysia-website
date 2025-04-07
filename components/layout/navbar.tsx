@@ -27,7 +27,7 @@ export function Header() {
     { name: 'About Us', href: '/about-us' },
     { name: 'Our Service', href: '/our-service' },
     { name: 'Why Choose Us', href: '/why-choose-us' },
-    { name: 'Career Opportunities', href: '/career-opportunities' },
+    { name: 'Career Opportunities', href: '/jobs' },
     { name: 'FAQ', href: '/faq' },
   ];
 

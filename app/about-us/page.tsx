@@ -17,9 +17,7 @@ export default function AboutPage() {
               Connect Excellence <br /> Shape the Future
             </h1>
             <p className="mt-6 text-lg text-gray-500">
-              Our mission is to connect exceptional talent with leading
-              companies through expert recruitment, career coaching, and
-              targeted training.
+              Our mission is to connect exceptional talent with leading companies through expert recruitment, career coaching, and targeted training.
             </p>
             <Image
               alt="Ecommerce Team"
@@ -36,9 +34,9 @@ export default function AboutPage() {
       <section className="mx-auto mt-28 max-w-7xl px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-16 lg:grid-cols-2">
           <div>
-            <h2 className="text-4xl font-semibold text-gray-900">Our Story</h2>
+            <h2 className="text-4xl font-semibold text-gray-900">Our Value</h2>
             <p className="mt-6 text-gray-600">
-              Innovation Collaboration Integrity Professionalism Growth
+              Innovation | Collaboration | Integrity | Professionalism | Growth
             </p>
           </div>
           <Image
@@ -58,9 +56,8 @@ export default function AboutPage() {
             <div>
               <h2 className="text-4xl font-semibold text-gray-900">Our Team</h2>
               <p className="mt-6 text-gray-600">
-                At TalentPioneer we’re not just a recruiting agency, we’re your
-                strategic partner in navigating the dynamic Malaysian job
-                market.
+                At TalentPioneer we’re not just a recruiting agency, we’re your strategic partner in navigating the dynamic Malaysian job market.
+
               </p>
             </div>
             <div className="grid grid-cols-2 gap-4">

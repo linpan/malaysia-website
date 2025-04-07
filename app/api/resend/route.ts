@@ -15,7 +15,7 @@ export async function POST(req: Request) {
     `;
     const { data } = await resend.emails.send({
       from: 'User <onboarding@resend.dev>',
-      to: ['katie.wang@talent-pioneer.com'],
+      to: ['yidiyu0507s@163.com'],
       subject: 'CV',
       html: html,
       attachments: [
